@@ -1,0 +1,16 @@
+pipeline:
+  deploy:
+    image: cschlosser/drone-ftps
+    hostname: wla1.wndp.pt:21
+    secrets: [ ftp_username, ftp_password ]
+    secure: true
+    dest_dir: /
+    src_dir: /
+    exclude:
+      - ^\.git/$
+      - ^\.gitignore$
+      - ^\.drone.yml$
+   include:
+     - ^*.css$
+     - ^*.js$
+     - ^*.html$
