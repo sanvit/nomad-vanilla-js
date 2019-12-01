@@ -7,7 +7,7 @@ const TODOS_LS = 'toDos';
 function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("Button");
-    delBtn.value = "X"
+    delBtn.value = "❌";
     const span = document.createElement("span");
     span.innerText = text;
     li.appendChild(span);
@@ -18,7 +18,7 @@ function paintToDo(text){
 function handleSubmit(event){
     event.preventDefault();
     const currentValue = toDoInput.value;
-    paintTodo(currentValue);
+    paintToDo(currentValue);
     toDoInput.value = "";
 }
 
@@ -28,8 +28,6 @@ function loadToDos(){
         
     }
 }
-
-function hand
 
 function init() {
     loadToDos();
