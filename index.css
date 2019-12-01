@@ -1,0 +1,25 @@
+body {
+    background-color: peru;
+    font-family: 'Kakao Light'
+}
+
+h1 {
+    color: white;
+}
+
+.text {
+    
+}
+
+.clicked {
+    color: purple;    
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
