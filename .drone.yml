@@ -11,6 +11,6 @@ pipeline:
       - ^\.gitignore$
       - ^\.drone.yml$
     include:
-      - ^*.css$
-      - ^*.js$
-      - ^*.html$
+      - *.css$
+      - *.js$
+      - *.html$
