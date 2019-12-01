@@ -8,11 +8,17 @@ function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("Button");
     delBtn.value = "❌";
+    delBtn.classList.add("delBtn");
     const span = document.createElement("span");
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
     toDoList.appendChild(li);
+    const toDoObj = {
+        text: text,
+        id: toDos.length +1
+    };
+    toDos.push(toDoObj);
 }
 
 function handleSubmit(event){
