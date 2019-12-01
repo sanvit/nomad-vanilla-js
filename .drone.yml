@@ -4,7 +4,7 @@ pipeline:
     hostname: wla1.wndp.pt:21
     secrets: [ ftp_username, ftp_password ]
     secure: false
-    dest_dir: /
+    dest_dir: /public_html/
     src_dir: /
     exclude:
       - ^\.git/$
