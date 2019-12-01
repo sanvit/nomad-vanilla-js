@@ -10,7 +10,3 @@ pipeline:
       - ^\.git/$
       - ^\.gitignore$
       - ^\.drone.yml$
-    include:
-      - *.css$
-      - *.js$
-      - *.html$
